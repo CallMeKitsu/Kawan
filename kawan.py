@@ -1,75 +1,99 @@
 import turtle
+import time
 
 non = "non"
 oui = "oui"
-est = 0
-ouest = 180
-nord = 90
-sud = 270
+droite: int = 0
+gauche: int = 180
+haut: int = 90
+bas: int = 270
 lente = 1
 rapide = 0
 normale = 6
 
 
-
-def avancer(taille):
+def Avancer(taille):
     turtle.forward(taille)
 
 
-def reculer(taille):
+def Reculer(taille):
     turtle.backward(taille)
 
 
-def gauche():
+def Gauche():
     turtle.left(90)
 
 
-def droite():
+def Droite():
     turtle.right(90)
 
 
-def aller(positionX, positionY):
+def Tourner(sens, degre):
+    if sens == gauche:
+        turtle.left(degre)
+    if sens == droite:
+        turtle.right(degre)
+
+
+def Aller(positionX, positionY):
     turtle.goto(positionX, positionY)
 
 
-def changerX(positionX):
+def ChangerX(positionX):
     turtle.setx(positionX)
 
 
-def changerY(positionY):
+def ChangerY(positionY):
     turtle.sety(positionY)
 
 
-def orienter(angle):
+def Orienter(angle):
+    print(angle)
     turtle.setheading(angle)
 
 
-def retour():
+def Retour():
     turtle.home()
 
 
-def cercle(rayon, etendre=None):
+def Cercle(rayon, etendre=None):
     turtle.circle(rayon, etendre)
 
 
-def point(diametre, couleur):
+def Point(diametre, couleur):
     turtle.dot(diametre, couleur)
 
 
-def annuler(nombre):
+def Annuler(nombre):
     turtle.undo(nombre)
 
 
-def vitesse(valeur):
+def Vitesse(valeur):
     turtle.speed(valeur)
 
 
-def dessin(valeur):
+def Dessiner(valeur):
     if valeur == oui:
         turtle.pendown()
     if valeur == non:
         turtle.penup()
 
 
-def fin():
+def Attendre(secondes):
+    time.sleep(secondes)
+
+
+def Couleur(couleur):
+    turtle.color(couleur)
+
+
+def Pinceau(diametre):
+    turtle.pensize(diametre)
+
+
+def CouleurDeFond(couleur):
+    turtle.bgcolor(couleur)
+
+
+def Fin():
     turtle.mainloop()
