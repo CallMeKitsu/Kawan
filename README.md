@@ -83,3 +83,31 @@ from turtle import * # importe turtle.py (conseillé)
   >la couleur peut être : un code [HEX](https://www.color-hex.com "sélécteur de couleur")
 * booléen
   >un booléen peut être "oui" ou "non"
+* angle
+  >l'angle peut être : haut, bas, gauche, droite
+  
+  >l'angle peut être : un nombre, sans ° 
+  
+# Avancement :
+- [x] forward()
+- [x] backward()
+- [ ] right()
+- [ ] left() 
+- [x] goto() 
+- [x] setx()
+- [x] sety()
+- [x] setheading()
+- [x] home()
+- [x] circle()
+- [x] dot()
+- [ ] stamp()
+- [ ] clearstamp()
+- [ ] clearstamps()
+- [x] undo()
+- [x] speed()
+- [x] pendown()
+- [x] penup()
+- [ ] pensize()
+- [ ] position()
+- [ ] color()
+- [ ] bgcolor()
