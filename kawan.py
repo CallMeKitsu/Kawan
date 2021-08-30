@@ -3,13 +3,21 @@ import time
 
 non = "non"
 oui = "oui"
-droite: int = 0
-gauche: int = 180
-haut: int = 90
-bas: int = 270
+droite = 0
+gauche = 180
+haut = 90
+bas = 270
 lente = 1
 rapide = 0
 normale = 6
+rouge = 'red'
+bleu = 'blue'
+vert = 'green'
+cyan = 'cyan'
+rose = 'rose'
+noir = 'black'
+jaune = 'yellow'
+magenta = 'magenta'
 
 
 def Avancer(taille):
