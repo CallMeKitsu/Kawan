@@ -1,6 +1,5 @@
 import turtle
 import time
-from TurtleScreen import screen
 
 non = "non"
 oui = "oui"
@@ -98,6 +97,10 @@ def Couleur(couleur):
 
 def Pinceau(diametre):
     turtle.pensize(diametre)
+
+
+def Ecrire(texte):
+    turtle.write(texte, False, align="center")
 
 
 def Fin():
