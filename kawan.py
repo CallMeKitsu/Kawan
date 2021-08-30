@@ -114,5 +114,17 @@ def Visible(booleen):
         turtle.showturtle()
 
 
+def Triangle(taille):
+    for i in range(3):
+        turtle.forward(taille)
+        turtle.left(120)
+
+
+def Carre(taille):
+    for i in range(4):
+        turtle.forward(taille)
+        turtle.left(90)
+
+
 def Fin():
     turtle.mainloop()
