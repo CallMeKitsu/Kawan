@@ -6,6 +6,9 @@ est = 0
 ouest = 180
 nord = 90
 sud = 270
+lente = 1
+rapide = 0
+normale = 6
 
 
 
@@ -49,8 +52,8 @@ def cercle(rayon, etendre=None):
     turtle.circle(rayon, etendre)
 
 
-def point(taille, couleur):
-    turtle.dot(taille, couleur)
+def point(diametre, couleur):
+    turtle.dot(diametre, couleur)
 
 
 def annuler(nombre):
