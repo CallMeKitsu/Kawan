@@ -80,10 +80,10 @@ def Vitesse(valeur):
     turtle.speed(valeur)
 
 
-def Dessiner(valeur):
-    if valeur == oui:
+def Dessiner(booleen):
+    if booleen == oui:
         turtle.pendown()
-    if valeur == non:
+    if booleen == non:
         turtle.penup()
 
 
@@ -101,6 +101,13 @@ def Pinceau(diametre):
 
 def Ecrire(texte):
     turtle.write(texte, False, align="center")
+
+
+def Visible(booleen):
+    if booleen == non:
+        turtle.hideturtle()
+    if booleen == oui:
+        turtle.showturtle()
 
 
 def Fin():
