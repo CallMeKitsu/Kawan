@@ -3,6 +3,7 @@ import time
 
 turtle.shape("turtle")  # apparence par défaut de Kawan
 turtle.color('green')  # apparence par défaut de Kawan
+print("CopyRight © 2021 CallMeKitsu")
 
 non = "non"
 oui = "oui"

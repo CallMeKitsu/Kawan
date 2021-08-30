@@ -24,26 +24,6 @@ Fin() # égal à : turtle.mainloop()
 # Documentation :
 La documentation et toutes les informations sur Kawan sont disponibles [ici](https://github.com/CallMeKitsu/Kawan/wiki "documentation") !
 
-# Avancement :
-- [x] forward()
-- [x] backward()
-- [X] right()
-- [X] left() 
-- [x] goto() 
-- [x] setx()
-- [x] sety()
-- [x] setheading()
-- [x] home()
-- [x] circle()
-- [x] dot()
-- [ ] ~~stamp()~~
-- [ ] ~~clearstamp()~~
-- [ ] ~~clearstamps()~~
-- [x] undo()
-- [x] speed()
-- [x] pendown()
-- [x] penup()
-- [X] pensize()
-- [ ] ~~position()~~
-- [X] color()
-- [X] bgcolor()
+# Licence :
+Programme distribué sous les termes de la licence publique générale GNU
+> © CopyRight 2021 CallMeKitsu
