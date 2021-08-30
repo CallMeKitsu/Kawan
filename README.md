@@ -19,49 +19,56 @@ from turtle import * # importe turtle.py (conseillé)
 * avancer(taille)
   >avance de la taille précisée
   
-  >taille = doit être un nombre
+  >taille = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 * reculer(taille)
   >recule de la taille précisée
   
-  >taille = doit être un nombre
+  >taille = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 * gauche()
   >tourne de 90° à gauche
 * droite()
   >tourne de 90° à droite
 * aller(x, y)
   >change la position de Kawan pour (x, y)
+   
+  >position = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
+
 * changerX(positionX)
   >change la position X de Kawan
+   
+  >position = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 * changerY(positionY)
   >change la position Y de Kawan
+   
+  >position = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 * orienter(angle)
   >oriente Kawan selon l'angle précisé
   
-  >angle = notation sans °
-
-  >oriente Kawan à l'ouest / est / nord / sud 
+  >angle = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 * retour()
   >change la position de Kawan pour (0, 0)
    
   >revient à la position initiale
 
 # Fonctions Paramètres :
-* dessin(valeur)
+* dessin(booléen)
   >active ou désactive le tracé des déplacements
-
-  >valeur = oui / non
+   
+  >booléen = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 
 # Fonctions Géométriques :
 * cercle(rayon)
   >trace un cercle de rayon précisé
    
+  >rayon = doit être un nombre 
+   
   >etendre = facultatif, arc de cercles
 * point(diamètre, couleur)
-  >dessine un point de la taille et la couleur précisée
+  >dessine un point du diamètre et la couleur précisée
   
-  >taille = doit être un nombre
+  >diamètre = doit être un nombre
   
-  >couleur = [index des variables](lien "index des variables")
+  >couleur = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
    
  
   
@@ -74,3 +81,5 @@ from turtle import * # importe turtle.py (conseillé)
   >la couleur peut être : rouge, bleu, vert, cyan, rose, noir, jaune, magenta
   
   >la couleur peut être : un code [HEX](https://www.color-hex.com "sélécteur de couleur")
+* booléen
+  >un booléen peut être "oui" ou "non"
