@@ -15,8 +15,7 @@ from kawan import * # importe Kawan pour l'utiliser
 from turtle import * # importe turtle.py (conseillé)
 ```
 
-# Documentation :
-fonctions moteur :
+# Fonctions Moteur :
 * avancer(taille)
   >avance de la taille précisée
   
@@ -38,8 +37,40 @@ fonctions moteur :
 * orienter(angle)
   >oriente Kawan selon l'angle précisé
   
+  >angle = notation sans °
+
   >oriente Kawan à l'ouest / est / nord / sud 
 * retour()
   >change la position de Kawan pour (0, 0)
    
-  >revient à la position initiale 
+  >revient à la position initiale
+
+# Fonctions Paramètres :
+* dessin(valeur)
+  >active ou désactive le tracé des déplacements
+
+  >valeur = oui / non
+
+# Fonctions Géométriques :
+* cercle(rayon)
+  >trace un cercle de rayon précisé
+   
+  >etendre = facultatif, arc de cercles
+* point(diamètre, couleur)
+  >dessine un point de la taille et la couleur précisée
+  
+  >taille = doit être un nombre
+  
+  >couleur = [index des variables](lien "index des variables")
+   
+ 
+  
+# Variables :
+* taille
+  >la taille est le nombre d'unités que Kawan va parcourir
+  
+  >la taille doit être un nombre
+* couleur
+  >la couleur peut être : rouge, bleu, vert, cyan, rose, noir, jaune, magenta
+  
+  >la couleur peut être : un code [HEX](https://www.color-hex.com "sélécteur de couleur")
