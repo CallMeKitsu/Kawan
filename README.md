@@ -1,5 +1,5 @@
 # Présentation :
-le module **turtle.py** est la manière la plus connue et la plus utilisée de créer des représentations graphiques en python, des la 3ème en général.
+le module **turtle.py** est la manière la plus connue et la plus utilisée de créer des représentations graphiques en python, dès la 3ème en général.
 
 **Kawan** est une simplification et une traduction du module entièrement en Français avec des paramètres expliqués et simplifiés.
 
@@ -15,63 +15,101 @@ from kawan import * # importe Kawan pour l'utiliser
 from turtle import * # importe turtle.py (conseillé)
 ```
 
+Conseil : pour laisser tourner la fenêtre d'affichage du rendu graphique, il est recommandé de placer la fonction :
+```py
+Fin() # égal à : turtle.mainloop()
+```
+À la fin de votre code, après toutes les autres fonctions de Kawan !
+
 # Fonctions Moteur :
-* avancer(taille)
+* Avancer(taille)
   >avance de la taille précisée
   
   >taille = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
-* reculer(taille)
+* Reculer(taille)
   >recule de la taille précisée
   
   >taille = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
-* gauche()
+* Gauche()
   >tourne de 90° à gauche
-* droite()
+* Droite()
   >tourne de 90° à droite
-* aller(x, y)
+* Tourner(direction, degré)
+  >tourner dans une direction à un certain degré
+  
+  >direction = peut être gauche / droite / haut / bas
+  
+  >degré = doit être un nombre, sans °
+* Aller(x, y)
   >change la position de Kawan pour (x, y)
    
   >position = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 
-* changerX(positionX)
+* ChangerX(positionX)
   >change la position X de Kawan
    
   >position = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
-* changerY(positionY)
+* ChangerY(positionY)
   >change la position Y de Kawan
    
   >position = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
-* orienter(angle)
+* Orienter(angle)
   >oriente Kawan selon l'angle précisé
   
   >angle = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
-* retour()
+* Retour()
   >change la position de Kawan pour (0, 0)
    
   >revient à la position initiale
 
 # Fonctions Paramètres :
-* dessin(booléen)
+* Dessiner(booléen)
   >active ou désactive le tracé des déplacements
    
   >booléen = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
+* Couleur(couleur)
+  >change la couleur du pinceau
+  
+  >couleur = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
 
+* CouleurDeFond(couleur)
+  >change la couleur du fond
+  
+  >couleur = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
+* Pinceau(diametre)
+  >change le diamètre du pinceau
+   
+  >diametre = doit être un nombre 
+* Vitesse(vitesse)
+  >change la vitesse à laquelle les actions sont effectuées
+
+  >vitesse = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
+   
 # Fonctions Géométriques :
-* cercle(rayon)
+* Cercle(rayon)
   >trace un cercle de rayon précisé
    
   >rayon = doit être un nombre 
    
   >etendre = facultatif, arc de cercles
-* point(diamètre, couleur)
+* Point(diamètre, couleur)
   >dessine un point du diamètre et la couleur précisée
   
   >diamètre = doit être un nombre
   
   >couleur = [index des variables](https://github.com/CallMeKitsu/Kawan#variables- "index des variables")
-   
- 
+
+# Fonctions Diverses :
+* Annuler(nombre)
+  >annule un nombre d'actions effectuées
   
+  >nombre = doit être un nombre, inférieur au nombre d'actions 
+* Attendre(secondes)
+  >attends le nombre de secondes avant d'effectuer la suite
+
+  >secondes = doit être un nombre
+* Fin()
+  >termine le programme et le laisse tourner (recommandé)
 # Variables :
 * taille
   >la taille est le nombre d'unités que Kawan va parcourir
@@ -86,13 +124,17 @@ from turtle import * # importe turtle.py (conseillé)
 * angle
   >l'angle peut être : haut, bas, gauche, droite
   
-  >l'angle peut être : un nombre, sans ° 
+  >l'angle peut être : un nombre, sans °
+* vitesse
+  >la vitesse peut être : rapide, lente, normale
+
+  >la vitesse peut être : un nombre, de 0 à 10
   
 # Avancement :
 - [x] forward()
 - [x] backward()
-- [ ] right()
-- [ ] left() 
+- [X] right()
+- [X] left() 
 - [x] goto() 
 - [x] setx()
 - [x] sety()
@@ -107,7 +149,7 @@ from turtle import * # importe turtle.py (conseillé)
 - [x] speed()
 - [x] pendown()
 - [x] penup()
-- [ ] pensize()
+- [X] pensize()
 - [ ] position()
-- [ ] color()
-- [ ] bgcolor()
+- [X] color()
+- [X] bgcolor()
