@@ -1,6 +1,9 @@
 import turtle
 import time
 
+turtle.shape("turtle")  # apparence par défaut de Kawan
+turtle.color('green')  # apparence par défaut de Kawan
+
 non = "non"
 oui = "oui"
 droite = 0
@@ -73,7 +76,8 @@ def Point(diametre, couleur):
 
 
 def Annuler(nombre):
-    turtle.undo(nombre)
+    for i in range(nombre):
+        turtle.undo()
 
 
 def Vitesse(valeur):
