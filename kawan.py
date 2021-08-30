@@ -29,16 +29,16 @@ def aller(positionX, positionY):
     turtle.goto(positionX, positionY)
 
 
-def x(positionX):
+def changerX(positionX):
     turtle.setx(positionX)
 
 
-def y(positionY):
+def changerY(positionY):
     turtle.sety(positionY)
 
 
-def orienter(valeur):
-    turtle.setheading(valeur)
+def orienter(angle):
+    turtle.setheading(angle)
 
 
 def retour():
