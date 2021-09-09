@@ -1,5 +1,5 @@
 # Présentation :
-le module **turtle.py** est la manière la plus connue et la plus utilisée de créer des représentations graphiques en python, dès la 3ème en général.
+Le module **turtle.py** est la manière la plus connue et la plus utilisée de créer des représentations graphiques en python, dès la 3ème en général.
 
 **Kawan** est une simplification et une traduction du module entièrement en Français avec des paramètres expliqués et simplifiés.
 
@@ -7,6 +7,8 @@ Son objectif est de rendre accessible des tâches simples avec Python afin de se
 
 # Utilisation :
 Pour utiliser Kawan, il vous suffit de télécharger le fichier [ici](https://github.com/CallMeKitsu/kawan/archive/refs/heads/main.zip "téléchargement") et de le déposer dans votre espace de travail (dans le même repertoire que votre fichier .py)
+
+Si vous n'avez jamais utilisé Python, cliquez [ici](https://github.com/CallMeKitsu/Kawan/wiki/Installation) pour trouver un tutoriel sur son installation !
 
 Ensuite, vous commencerez votre code par ceci :
 

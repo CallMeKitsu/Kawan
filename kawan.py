@@ -129,3 +129,7 @@ def Carre(taille):
 
 def Fin():
     turtle.mainloop()
+
+
+def DemiTour():
+    turtle.left(180)
